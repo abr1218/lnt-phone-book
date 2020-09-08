@@ -1,0 +1,25 @@
+<div>
+
+    <h1>any to any comp common -Demo</h1>
+<p> data coming from account data servece: {{accountName}}</p>
+<input type="text" [(ngModel)]="duplicateAccountName">
+<button type="button" class="btn:btn-primary"
+(click)= "updateAccountHandler()"> Update Account Name </button>
+
+<hr>
+<h2>Pipes - Demo</h2>
+<p>{{today}}</p>
+<p>{{today | date }}  </p>
+<p>{{today | date: 'dd/MM/yyyy' }}</p>
+
+<p>{{randomText}}</p>
+<p>{{randomText |uppercase }}</p>
+
+<h3> Custome Pipes </h3>
+<pre> ng g p shared/pipes/ellipsis</pre>
+
+<p>{{randomText}}</p>
+<p>{{randomText | ellipsis }}</p>
+<p>{{randomText | ellipsis: '24' }}</p> <!--Parameer pipe -->
+
+</div>
